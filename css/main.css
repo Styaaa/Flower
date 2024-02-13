@@ -62,34 +62,67 @@ body {
     linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
 }
 
-@media screen and (max-width: 767px) {
-  .text{
-    z-index: 1;
-    color: #6bf0ff;
-    position: absolute;
-    display: flex;
-    bottom: 650px;
-    text-align: center;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8vw;
-  }
+.opening{
+  z-index: 1;
+  color: #6bf0ff;
+  position: absolute;
+  display: flex;
+  bottom: 50%;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
 }
 
-@media screen and (min-width: 767px) {
-  .text{
-    z-index: -1;
-    color: #6bf0ff;
-    position: absolute;
-    display: flex;
-    bottom: 800px;
-    text-align: center;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4vw;
-  }
+/* CSS Button*/
+.button-51 {
+  background-color: transparent;
+  border: 2px solid #266DB6;
+  box-sizing: border-box;
+  color: #266DB6;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 2.2vw;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: absolute;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  bottom: 40%;
+}
+
+a{
+  text-decoration: none;
+  color: #266DB6;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
 }
 
 
