@@ -1,7 +1,7 @@
 onload = () => {
   
   document.body.classList.remove("container");
-  alert("Selamattt valentinneee ceeeyyyyy/- Satya");
+  alert("Selamat Valentine Cey\n- Satya");
 };
 
 // $(".button-51").click(function() {
