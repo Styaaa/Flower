@@ -82,10 +82,10 @@ body {
   box-sizing: border-box;
   color: #266DB6;
   font-family: "Avenir Next LT W01 Bold",sans-serif;
-  font-size: 2.2vw;
-  font-weight: 700;
+  font-size: 2vw;
+  font-weight: 400;
   line-height: 24px;
-  padding: 16px 23px;
+  padding: 17px 23px;
   position: absolute;
   text-decoration: none;
   user-select: none;
@@ -123,6 +123,36 @@ a{
 
 .button-51:hover:before {
   background-color: #6DCFF6;
+}
+
+@media screen and (max-width: 767px) {
+  .text{
+    z-index: 1;
+    color: #6bf0ff;
+    position: absolute;
+    display: flex;
+    bottom: 650px;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .text{
+    z-index: -1;
+    color: transparent;
+    position: absolute;
+    display: none;
+    bottom: 800px;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+  }
 }
 
 
